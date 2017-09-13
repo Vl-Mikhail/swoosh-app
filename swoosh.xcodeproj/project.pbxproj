@@ -31,7 +31,7 @@
 		63B7C8491F5C5B8500E83964 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63B7C8501F5C62CC00E83964 /* BorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderButton.swift; sourceTree = "<group>"; };
 		63C134AD1F69893600BD25FA /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		63C134AE1F6989AA00BD25FA /* swoosh-img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "swoosh-img.png"; sourceTree = "<group>"; };
+		63C134AF1F69904500BD25FA /* swoosh-img.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "swoosh-img.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 				63B7C83C1F5C5B8500E83964 /* swoosh */,
 				63B7C83B1F5C5B8500E83964 /* Products */,
 				63C134AD1F69893600BD25FA /* README.md */,
-				63C134AE1F6989AA00BD25FA /* swoosh-img.png */,
+				63C134AF1F69904500BD25FA /* swoosh-img.jpg */,
 			);
 			sourceTree = "<group>";
 		};
