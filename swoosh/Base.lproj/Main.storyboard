@@ -144,6 +144,9 @@
                                         <state key="normal" title="Mens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="GhB-dc-A5K" eventType="touchUpInside" id="sCe-0P-uVH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9L-JN-Ro8" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="65" width="343" height="50"/>
@@ -155,6 +158,9 @@
                                         <state key="normal" title="Womens">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWomensTapped:" destination="GhB-dc-A5K" eventType="touchUpInside" id="nUp-OV-xeS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adh-XW-M82" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="130" width="343" height="50"/>
@@ -166,10 +172,13 @@
                                         <state key="normal" title="Co-ed">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="GhB-dc-A5K" eventType="touchUpInside" id="n5L-68-qlD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXP-hx-JvC" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXP-hx-JvC" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="16" y="597" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.3047137164" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -217,6 +226,7 @@
                         <viewLayoutGuide key="safeArea" id="ue5-K0-Hjl"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="LXP-hx-JvC" id="geb-Sh-Mkc"/>
                         <segue destination="cTN-oy-b0C" kind="show" identifier="skillVCSegue" id="O6c-aM-AlE"/>
                     </connections>
                 </viewController>
@@ -254,7 +264,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58x-ow-nV0" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="58x-ow-nV0" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
                                 <rect key="frame" x="16" y="597" width="343" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.3047137164" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -265,6 +275,9 @@
                                 <state key="normal" title="Finish">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onFinishTapped:" destination="cTN-oy-b0C" eventType="touchUpInside" id="h5t-xT-IGj"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="xCL-0F-ekU">
                                 <rect key="frame" x="16" y="185" width="343" height="50"/>
@@ -279,6 +292,9 @@
                                         <state key="normal" title="Beginner">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onBeginnerTapped:" destination="cTN-oy-b0C" eventType="touchUpInside" id="bdQ-LL-9IV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPc-7U-LuR" customClass="BorderButton" customModule="swoosh" customModuleProvider="target">
                                         <rect key="frame" x="184" y="0.0" width="159" height="50"/>
@@ -290,6 +306,9 @@
                                         <state key="normal" title="Baller">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onBallerTapped:" destination="cTN-oy-b0C" eventType="touchUpInside" id="1rC-Oe-w7P"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -312,6 +331,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rge-Kl-xag"/>
                     </view>
+                    <connections>
+                        <outlet property="finishBtn" destination="58x-ow-nV0" id="Wd5-pc-tVT"/>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="HomeVCSegue" id="CtI-Us-5SQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v41-hJ-48k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
